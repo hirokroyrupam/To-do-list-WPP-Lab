@@ -1,0 +1,42 @@
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.4);
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.7);
+}
+
+.task-item {
+    transition: all 0.25s ease-in-out;
+}
+.task-item:hover {
+    transform: translateY(-2px);
+}
+
+.task-item.dragging {
+    opacity: 0.4;
+    transform: scale(0.98);
+}
+
+.custom-checkbox {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.custom-checkbox:checked {
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+}
+
+.progress-bar-fill {
+    transition: width 0.4s ease-out;
+}
